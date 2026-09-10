@@ -30,7 +30,7 @@ mkdir -p ~/.claude/skills/we-the-users
 curl -fsSL https://wetheusers.ai/skill/SKILL.md -o ~/.claude/skills/we-the-users/SKILL.md
 ```
 
-For Codex, and for other agents that share its folder, the path is `~/.agents/skills/we-the-users/` instead. To remove it, delete the folder.
+For Codex, and for other agents that share its folder, the path is `~/.agents/skills/we-the-users/` instead. To remove it, delete the folder. If you installed with the `skills` CLI, it put the file at `~/.agents/skills/we-the-users/` and a link to it at `~/.claude/skills/we-the-users`; delete both.
 
 If you already use the `skills` CLI, `npx skills add wetheusers-ai/skill` places it for every agent at once. That command downloads and runs a tool we do not control, and installs whatever is on our main branch today. We mention it because it is convenient, not because it is the safer path.
 
